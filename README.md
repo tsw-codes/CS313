@@ -1,30 +1,36 @@
 Name: Oluwatomisin Sapara-williams 
 Class : CMSC 313 Mon/Wed 2:30-3:45
-Purpose: The purpose of this programs that are written in C++  and C is to implement a matrix expression that computes 
-D =  A + (3 * B x C^t)
-Where:
-- `A` is a 2×2 matrix
-- `B` is a 2×3 matrix
-- `C` is a 2×3 matrix, and `Cᵀ` is its transpose (3×2)
-- `D` is the resulting 2×2 matrix after computing the expression
+# Matrix Expression Evaluator
 
-The program demonstrates:
-- Matrix scaling (multiplying `B` by a scalar value `3`)
-- Matrix transposition (`Cᵀ`)
-- Matrix multiplication between a 2×3 and a 3×2 matrix
-- Element-wise matrix addition between `A` and the result of the product
-- Matrix printing to the console
+## PURPOSE OF SOFTWARE:
+This program computes a matrix expression of the form:
+D = A + (3 * B + C^T)
 
-### 💻 Technologies Used
-- Language: C (C99 Standard) or C++
-- Compiler: GCC (x86 architecture)
+It demonstrates basic matrix operations including scalar multiplication, transposition, matrix multiplication, and matrix addition. 
 
-### 🔧 Compilation Instructions
+---
 
-#### For C version:
+## FILES:
+- `matrix.c` and `matrix.cpp`: The main source file containing the entire logic for initializing matrices, performing matrix operations, and printing the final result.
+ `README.md`: This documentation file.
+
+
+---
+
+## BUILD INSTRUCTIONS:
+
+### For C (C99):
 ```bash
-gcc -std=c99 -Wall -o matrix matrix.c
+gcc -std=c99 -Wall -Wextra -o matrix matrix.c
 ./matrix
 
-for C++:
+for C ++:
 g++ -o matrix matrix.cpp
+---
+
+Expected output :
+D = A + (3 * B × Cᵀ):
+90  70
+200 153
+
+
