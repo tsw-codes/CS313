@@ -21,7 +21,7 @@ It demonstrates basic matrix operations including scalar multiplication, transpo
 
 ### For C (C99):
 ```bash
-gcc -std=c99 -Wall -Wextra -o matrix matrix.c
+gcc -std=c99 -Wall -o matrix matrix.c
 ./matrix
 
 for C ++:
