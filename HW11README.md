@@ -10,24 +10,14 @@ Each byte (e.g., `0x83`) is split into two 4-bit nibbles:
 
 Each nibble is converted to its corresponding ASCII character (`'8'`, `'3'`) and stored in an output buffer. A space character `' '` is added after each byte, and a newline character is appended at the end.
 
-This version of the program **does not use subroutines**. All logic is inline within the main loop.
-
 ---
 
 ## Files
 
-- `printData.asm` – The main assembly source file.
-- *(You must rename your `.asm` file to match or adjust compilation instructions accordingly.)*
+- `translateToAscii.asm` – The main assembly source file.
+- 'subroutine.asm' - extra credit
 
----
 
-## Requirements
-
-- NASM (Netwide Assembler)
-- Linux OS with 32-bit support
-- GNU `ld` linker
-
-If you're using a 64-bit Linux system, you may need to install 32-bit libraries and enable 32-bit support.
 
 ---
 
