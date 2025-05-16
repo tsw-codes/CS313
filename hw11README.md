@@ -23,9 +23,13 @@ Each nibble is converted to its corresponding ASCII character (`'8'`, `'3'`) and
 
 ## How to Compile and Run
 
-### Step 1: Assemble the code
+ Assemble the code
 
-nasm -f elf32 translateToAscii.asm -o translateToAscii.o
+nasm -f elf32 -g -F dwarf -o translateToAscii.o translateToAscii.asm
+
+link the object file 
+ ld -m elf_i386 -o translateToAscii translateToAscii.o
+
 
 ## Expected Output
 83 6A 88 DE 9A C3 54 9A
